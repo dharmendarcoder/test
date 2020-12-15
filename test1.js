@@ -19,3 +19,9 @@ function mathOperation(str1,str2,str3,str4){
 
 }
 mathOperation("20","30","10","2")
+//Another way its only work in terminals
+function evil(fn) {
+    return new Function('return ' + fn)();
+  }
+  
+  console.log( evil('20*(30+10)/(10*2)') ); 
